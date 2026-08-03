@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Registration Form</title>
+</head>
+
+<body>
+  <h1>Employee Registration Form</h1>
+
+  <form action="welcome.html" method="get" target="_blank">
+
+    <fieldset>
+      <legend>Employee Information</legend>
+
+      <label>Employee Name:</label>
+      <input type="text" name="emp_name" pattern="[A-Za-z ]{3,50}" placeholder="ENTER EMPLOYEE NAME" value="admin" disabled />
+      <br><br>
+       Address:
+      <textarea rows="4" cols="10"  placeholder="ENTER YOUR ADDRESS" ></textarea>
+      <br />
+      <br />
+      <label>Email:</label>
+      <input type="email" name="emp_email" placeholder="ENTER EMPLOYEE EMAIL" />
+      <br><br>
+
+      <label>Password:</label>
+      <input type="password" name="emp_pass" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" placeholder="ENTER PASSWORD" />
+      <br><br>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="emp_phone" pattern="[0-9]{10}" placeholder="ENTER PHONE NUMBER" />
+      <br><br>
+
+      <label>Age:</label>
+      <input type="number" name="emp_age" placeholder="ENTER AGE" />
+      <br><br>
+
+      <label>Gender:</label>
+      <input type="radio" name="emp_gender" value="Male" /><label>Male</label>
+      <input type="radio" name="emp_gender" value="Female" /><label>Female</label>
+      <br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Job Details</legend>
+
+      <label>Upload Resume:</label>
+      <input type="file" name="emp_resume" />
+      <br><br>
+
+      <label>ID Card Color:</label>
+      <input type="color" name="emp_color" />
+      <br><br>
+
+      <label>Search Department:</label>
+      <input type="search" name="emp_search" />
+      <br><br>
+
+      <label>Experience Level:</label>
+      <input type="range" name="emp_range" />
+      <br><br>
+
+      <label>Portfolio Website:</label>
+      <input type="url" name="emp_url" pattern="https?://.+" />
+      <br><br>
+
+      <label>Department:</label>
+      <select name="emp_department">
+        <optgroup label="Technical">
+          <option value="IT">IT</option>
+          <option value="CSE">CSE</option>
+          <option value="HR">HR</option>
+          <option value="Support">Support</option>
+        </optgroup>
+
+        <optgroup label="Management">
+          <option value="Manager">Manager</option>
+          <option value="Finance">Finance</option>
+        </optgroup>
+      </select>
+      <br><br>
+
+      <label>Work Location:</label>
+      <input list="location" name="emp_location" />
+
+      <datalist id="location">
+        <option value="Rajkot">Rajkot</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Surat">Surat</option>
+        <option value="Vadodara">Vadodara</option>
+      </datalist>
+
+      <br><br>
+
+      <label>Accept Company Policy:</label>
+      <input type="checkbox" name="emp_policy" value="I Agree" />
+      <label>I Agree</label>
+
+      <br>
+
+      Skills
+      <input type="checkbox" name="emp_skills[]" value="Python" />
+      <label>Python</label>
+
+<input type="checkbox" name="emp_skills[]" value="Communication" />
+<label>Communication</label>
+
+<input type="checkbox" name="emp_skills[]" value="Leadership" />
+<label>Leadership</label>
+
+<input type="checkbox" name="emp_skills[]" value="Teamwork" />
+<label>Teamwork</label>
+
+<input type="checkbox" name="emp_skills[]" value="Problem Solving" />
+<label>Problem Solving</label>
+
+<input type="checkbox" name="emp_skills[]" value="Accounting" />
+<label>Accounting</label>
+
+<input type="checkbox" name="emp_skills[]" value="Project Management" />
+<label>Project Management</label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Joining Details</legend>
+
+      <label>Joining Date:</label>
+      <input type="date" name="emp_join_date" />
+      <br><br>
+
+      <label>Reporting Time:</label>
+      <input type="time" name="emp_time" />
+      <br><br>
+
+      <label>Joining Month:</label>
+      <input type="month" name="emp_month" />
+      <br><br>
+
+      <label>Joining Week:</label>
+      <input type="week" name="emp_week" />
+      <br><br>
+
+      <label>Date and Time:</label>
+      <input type="datetime-local" name="emp_datetime" />
+      <br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Form Controls</legend>
+
+      <button onclick="sub()">Click Me</button>
+
+      <input type="image" src="Picture1.png" alt="Register" height="200" width="200" />
+
+      <br><br>
+
+      <input type="submit" />
+
+      <br><br>
+
+      <input type="reset" />
+
+      <br><br>
+
+    </fieldset>
+
+  </form>
+
+  <script>
+    function sub()
+    {
+
+    }
+  </script>
+
+</body>
+</html>
